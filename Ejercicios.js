@@ -345,7 +345,102 @@ console.log(processed);
 */
 
 //?27-Permanece en línea
+/*
+function nextInLine(arr, item) {
+  
+  //! Cambia solo el código debajo de esta línea
+  arr.push(item);
+  const removed = arr.shift();
+  return removed;
+  //! Cambia solo el código encima de esta línea
+}
+
+//! Configuración
+let testArr = [1, 2, 3, 4, 5];
+
+//! Muestra el código
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+*/
 
 
+//?28-Comprende los valores booleanos
+
+/*
+function welcomeToBooleans() {
+  //! Cambia solo el código debajo de esta línea
+
+  return true; //! Cambia esta línea
+
+  //! Cambia solo el código encima de esta línea
+}
+
+console.log(welcomeToBooleans());
+*/
+
+//?29-Usa lógica condicional con las sentencias "If"
+
+/*
+function trueOrFalse(wasThatTrue) {
+  //! Cambia solo el código debajo de esta línea
+   if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+
+
+  //! Cambia solo el código encima de esta línea
+}
+
+console.log(trueOrFalse(true), trueOrFalse(false));
+*/
+
+//?30-Comparación con el operador de igualdad
+
+/*
+//! Configuración
+function testEqual(val) {
+  if (val == 12) { //! Cambia esta línea para que de diferente de 10
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testEqual(10);
+
+console.log(testEqual());
+*/
+
+//?31-Comparación con el operador de estricta igualdad
+
+/*
+//! Configuración
+function testStrict(val) {
+  if (val === 7) { //! Cambia esta línea que sea un numero estrictamente diferente de 10
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+testStrict(10);
+*/
+
+//?32-Practica comparando diferentes valores
+
+/*
+//! Configuración
+function compareEquality(a, b) {
+  if (a === b) { // Cambia esta línea para que sea estrictamente igual
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+compareEquality(10, "10");
+compareEquality("20", 20);
+*/
+
+//?33-Comparación con el operador de desigualdad
 
 
