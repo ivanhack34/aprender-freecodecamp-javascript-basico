@@ -229,13 +229,122 @@ console.log(myArray);
   
   functionWithArgs(1,2)
   functionWithArgs(7,9)
-  */
+*/
 
 //?21-Devuelve un valor de una función utilizando "Return"
 
+/*function timesFive(num) {
+  return num * 5;
+}
+
+const answer = timesFive(0); //0
+const answer1 = timesFive(2); //10
+const answer2 = timesFive(5); //25
+
+console.log(answer, answer1, answer2);
+*/
+
+//?22-Ámbito global y funciones
+/*
+//! Declara la variable myGlobal debajo de esta línea
+let myGlobal = 10;
+
+function fun1() {
+  // Asigna 5 a oopsGlobal aquí
+  oopsGlobal = 5;
+}
+
+//! Cambia solo el código encima de esta línea
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
 
 
+console.log(fun1(),fun2());
+*/
 
+//?23-Ámbito local y funciones 2
+
+/*
+function myLocalScope() {
+  //! Cambia solo el código debajo de esta línea
+  let myVar;
+
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+//! Ejecuta y verifica la consola
+//! myVar no está definida afuera de myLocalScope
+console.log('outside myLocalScope', myVar); 
+*/
+
+//?24-Ámbito global vs. local en funciones
+
+/*
+//! Configuración
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+  //! Cambia solo el código debajo de esta línea
+  const outerWear = "sweater"; //! Lo que hara es reescribir la variable global de la local
+  //! Cambia solo el código encima de esta línea
+  return outerWear;
+}
+
+myOutfit();
+
+console.log(myOutfit());
+*/
+
+//?25-Comprendiendo el valor indefinido devuelto por una función
+
+/*
+//! Configuración
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+//! Cambia solo el código debajo de esta línea
+function addFive() {
+  sum = sum + 5
+} 
+
+//! Cambia solo el código encima de esta línea
+
+addThree();
+addFive();
+
+console.log(addFive(), addThree());
+*/
+
+//?26-Asignación con un valor devuelto
+
+/*
+///! Configuración
+let processed = 2;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+//! Cambia solo el código debajo de esta línea
+processed = processArg(7);
+
+console.log(processed);
+*/
+
+//?27-Permanece en línea
 
 
 
