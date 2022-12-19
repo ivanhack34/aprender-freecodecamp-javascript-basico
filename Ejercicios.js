@@ -441,6 +441,177 @@ compareEquality(10, "10");
 compareEquality("20", 20);
 */
 
+//--------Ejerccicio del dia 5: 19/12/2022
 //?33-Comparación con el operador de desigualdad
+
+/*
+//! Configuración
+function testNotEqual(val) {
+  if (val != 99) { //! Cambia esta línea
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
+
+console.log(testNotEqual(10));
+*/
+
+//?34-Comparación con el operador de estricta desigualdad
+
+/*
+//! Configuración
+function testStrictNotEqual(val) {
+  if (val !== 17) { //! Cambia esta línea
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);
+
+console.log(testStrictNotEqual(10));
+*/
+
+//?35-Comparación con el operador "mayor que"
+
+/*
+function testGreaterThan(val) {
+  if (val > 100) {  //! Cambia esta línea
+    return "Over 100";
+  }
+
+  if (val > 10) {  //! Cambia esta línea
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+testGreaterThan(10);
+
+console.log(testGreaterThan(1000));
+*/
+
+//?36-Comparación con el operador "mayor o igual que"
+
+/*
+function testGreaterOrEqual(val) {
+  if (val >= 20) {  //! Cambia esta línea
+    return "20 or Over";
+  }
+
+  if (val >= 10) {  //! Cambia esta línea
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+
+console.log(testGreaterOrEqual(20));
+*/
+
+//?37-Comparación con el operador "menor que"
+
+/*
+function testLessThan(val) {
+  if (val < 25) {  // Cambia esta línea
+    return "Under 25";
+  }
+
+  if (val < 55) {  // Cambia esta línea
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+testLessThan(10);
+
+console.log(testLessThan(54));
+*/
+
+//?38-Comparación con el operador "menor o igual que"
+
+/*
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Cambia esta línea
+    return "Smaller Than or Equal to 12";
+  }
+
+  if (val <= 24) {  // Cambia esta línea
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+testLessOrEqual(10);
+
+console.log(testLessOrEqual(50));
+*/
+
+//?39-Comparaciones con el operador lógico "and"
+
+/*
+function testLogicalAnd(val) {
+  //! Cambia solo el código debajo de esta línea
+
+  if (val<= 50 && val >= 25) {
+      return "Yes";
+  }
+
+  //! Cambia solo el código encima de esta línea
+  return "No";
+}
+
+testLogicalAnd(10);
+
+console.log(testLogicalAnd(60));
+*/
+
+//?40-Comparaciones con el operador lógico "or"
+
+/*
+function testLogicalOr(val) {
+  //! Cambia solo el código debajo de esta línea
+
+  if (val < 10 || val > 20) {
+    return "Outside";
+  }
+
+  //! Cambia solo el código encima de esta línea
+  return "Inside";
+}
+
+testLogicalOr(15);
+
+console.log(testLogicalOr(9));
+*/
+
+//?41-Introducción a las sentencias "Else"
+
+/*
+function testElse(val) {
+  let result = "";
+  //! Cambia solo el código debajo de esta línea
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+
+  //! Cambia solo el código encima de esta línea
+  return result;
+}
+
+console.log(testElse(11));
+*/
+
+//?42-Introducción a las sentencias "Else If"
 
 
