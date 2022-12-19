@@ -612,6 +612,105 @@ function testElse(val) {
 console.log(testElse(11));
 */
 
-//?42-Introducción a las sentencias "Else If"
+//todo: Ejerccicio del dia 5 - parte 2: 19/12/2022
 
+//?42-Introducción a las sentencias "Else If
 
+/*
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  }else {
+    return "Between 5 and 10";
+  }
+}
+
+testElseIf(7);
+
+console.log(testElseIf(11));
+*/
+
+//?43-Orden lógico de las sentencias "if else"
+
+/*
+function orderMyLogic(val) {
+  if(val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+orderMyLogic(7);
+
+console.log(orderMyLogic(8));
+*/
+
+//?44-Encadena sentencias if else
+
+/*
+function testSize(num) {
+  // Cambia solo el código debajo de esta línea
+if(num < 5){
+  return "Tiny"
+}else if (num < 10){
+  return "Small"
+}else if (num < 15){
+  return "Medium"
+}else if (num < 20){
+  return "Large"
+}else if (num >= 20){
+  return "Huge"
+}
+
+  return "Change Me";
+  // Cambia solo el código encima de esta línea
+}
+
+console.log(testSize(25));
+*/
+
+//?45-Código de golf
+
+/*
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Cambia solo el código debajo de esta línea
+  if (strokes == 1){
+    return names[0];
+  } else if (strokes <= par -2){
+    return names[1];
+  } else if (strokes === par -1){
+    return names[2];
+  } else if (strokes === par){
+    return names[3];
+  }else if (strokes == par + 1){
+    return names[4];
+  }else if (strokes == par + 2){
+    return names[5];
+  }else if (strokes >=par + 3) {
+    return names[6];
+  }
+
+  return "Change Me";
+  // Cambia solo el código encima de esta línea
+}
+
+golfScore(5, 4);
+
+console.log(golfScore(4, 1)); //Hole-in-One
+console.log(golfScore(4, 2)); //Eagle
+console.log(golfScore(5, 4)); //Berdie
+console.log(golfScore(4, 4) ); //Par
+console.log(golfScore(1, 1)); //Hole-in-one!
+console.log(golfScore(4, 5)); //Bogey
+console.log(golfScore(4, 6)); //Double Bogey
+console.log(golfScore(4, 7)); //Go Home!
+*/
+
+//?46-Seleccionando entre muchas opciones con declaración switch
