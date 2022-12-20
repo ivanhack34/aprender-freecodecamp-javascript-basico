@@ -713,4 +713,161 @@ console.log(golfScore(4, 6)); //Double Bogey
 console.log(golfScore(4, 7)); //Go Home!
 */
 
+//todo: Ejercicio del dia 6: 20-12-2022
+
 //?46-Seleccionando entre muchas opciones con declaración switch
+
+/*
+function caseInSwitch(val) {
+  let answer = "";
+  // Cambia solo el código debajo de esta línea
+
+switch(val){
+case 1:
+  console.log( answer = "alpha");
+  break;
+case 2:
+  console.log(answer = "beta");
+  break;
+case 3:
+  console.log( answer = "gamma");
+  break;
+case 4:
+  console.log(answer = "delta");
+  break;
+}
+
+
+  // Cambia solo el código encima de esta línea
+  return answer;
+}
+
+caseInSwitch(1);
+caseInSwitch(2);
+caseInSwitch(3);
+caseInSwitch(4);
+*/
+
+//?47-Agrega una opción predeterminada en las declaraciones switch
+
+/*
+function switchOfStuff(val) {
+  let answer = "";
+  // Cambia solo el código debajo de esta línea
+
+switch (val) {
+case "a":
+  console.log(answer = "apple");
+  break;
+case "b":
+  console.log(answer = "bird");
+  break;
+case "c":
+  console.log(answer = "cat");
+  break;
+default:
+  console.log(answer = "stuff");
+  break;
+}
+
+
+  // Cambia solo el código encima de esta línea
+  return answer;
+}
+
+switchOfStuff("a");
+switchOfStuff("b");
+switchOfStuff("c");
+switchOfStuff("d");
+*/
+
+//?48-Múltiples opciones idénticas en las declaraciones "switch"
+/*
+function sequentialSizes(val) {
+  let answer = "";
+  // Cambia solo el código debajo de esta línea
+switch(val){
+  case 1:
+  case 2:
+  case 3:
+    console.log(answer = "Low") ;
+    break;
+  case 4:
+  case 5:
+  case 6:
+    console.log(answer = "Mid") ;
+    break;
+  case 7:
+  case 8:
+  case 9:
+    console.log(answer = "High") ;
+    break;
+}
+
+
+  // Cambia solo el código encima de esta línea
+  return answer;
+}
+
+sequentialSizes(1);
+sequentialSizes(5);
+sequentialSizes(8);
+*/
+
+//?49-Reemplazando cadenas de "If Else" por "Switch"
+
+/*
+function chainToSwitch(val) {
+  let answer = "";
+  // Cambia solo el código debajo de esta línea
+
+  switch (val) {
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 1: 
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me by this much!";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;
+  }
+
+  // Cambia solo el código encima de esta línea
+  return answer;
+}
+
+chainToSwitch(7);
+chainToSwitch("bob");
+chainToSwitch(42);
+chainToSwitch(1);
+chainToSwitch(99);
+
+console.log(chainToSwitch(7));
+console.log(chainToSwitch("bob"));
+console.log(chainToSwitch(42));
+console.log(chainToSwitch(1));
+console.log(chainToSwitch(99));
+*/
+
+//?50-Devuelve valores booleanos desde funciones
+/*
+function isLess(a, b) {
+  // Cambia solo el código debajo de esta línea
+  return a < b;
+  // Cambia solo el código encima de esta línea
+}
+
+isLess(10, 15);
+
+console.log(isLess(10, 15));
+console.log(isLess(20, 15));
+*/
+
+//?51-Patrón de devolución anticipado para funciones
