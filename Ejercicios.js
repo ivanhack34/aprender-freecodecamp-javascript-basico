@@ -870,4 +870,209 @@ console.log(isLess(10, 15));
 console.log(isLess(20, 15));
 */
 
+//todo: Ejercicio del dia 7: 21/12/2022
+
 //?51-Patrón de devolución anticipado para funciones
+/*
+// Configuración
+function abTest(a, b) {
+  // Cambia solo el código debajo de esta línea
+  if(a < 0 || b < 0){
+    return undefined;
+  }
+
+  // Cambia solo el código encima de esta línea
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);
+
+console.log(abTest(2,2));
+*/
+
+//?52-Conteo de cartas
+/*
+let count = 0;
+
+function cc(card) {
+  // Cambia solo el código debajo de esta línea
+ if (card <= 6) 
+    count++;
+  else if (card >="10")
+    count--;
+  return count + (count > 0 ? ' Bet' : ' Hold');
+  // Cambia solo el código encima de esta línea
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+console.log(cc(2));
+console.log(cc(3));
+console.log(cc(7));
+console.log(cc('K'));
+console.log(cc('A'));
+*/
+
+//?53-Construye objetos en JavaScript
+
+/*
+const myDog = {
+  // Cambia solo el código debajo de esta línea
+  name: "Tobi",
+  legs: 4,
+  tails: 1,
+  friends: [4]
+  // Cambia solo el código encima de esta línea
+};
+
+console.log(myDog);
+*/
+
+//?54-Accede a propiedades de objetos con notación de puntos
+
+/*
+// Configuración
+const testObj = {
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats"
+};
+
+// Cambia solo el código debajo de esta línea
+const hatValue = testObj.hat;      // Cambia esta línea
+const shirtValue = testObj.shirt;    // Cambia esta línea
+
+console.log(hatValue, shirtValue);
+*/
+
+//?55-Accede a propiedades de objetos con notación de corchete
+
+/*
+// Configuración
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Cambia solo el código debajo de esta línea
+const entreeValue = testObj["an entree"];   // Cambia esta línea
+const drinkValue = testObj["the drink"];    // Cambia esta línea
+
+console.log(entreeValue, drinkValue);
+*/
+
+//?56-Accede a propiedades de objetos con variables
+
+/*
+// Configuración
+const testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Cambia solo el código debajo de esta línea
+const playerNumber = 16;  // Cambia esta línea
+const player = testObj[playerNumber];   // Cambia esta línea
+
+console.log(player);
+*/
+
+//?57-Actualizando las propiedades de un objeto
+
+/*
+// Configuración
+const myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.name = "Happy Coder";
+
+
+// Cambia solo el código debajo de esta línea
+
+console.log(myDog);
+*/
+
+//?58-Añade nuevas propiedades a un objeto de JavaScript
+
+/*
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog.bark = "woff";
+
+console.log(myDog);
+*/
+
+//?59-Elimina propiedades en un objeto de JavaScript
+
+/*
+// Configuración
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails;
+
+// Cambia solo el código debajo de esta línea
+
+console.log(myDog);
+*/
+
+//?60-Usa objetos para hacer búsquedas
+
+/*
+function phoneticLookup(val) {
+  var result = "";
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+// After converting our case statements into object properties you can make use of the variable `result` to let the function return the correct value.
+
+
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+console.log(phoneticLookup.delta);
+*/
+
+//?61-Verifica las propiedades de un objeto
+
+/*
+function checkObj(obj, checkProp) {
+  // Cambia solo el código debajo de esta línea
+   if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  } 
+  // Cambia solo el código encima de esta línea
+}
+
+console.log(checkObj);
+*/
+
+//?62-Manipulando objectos complejos
+
+
