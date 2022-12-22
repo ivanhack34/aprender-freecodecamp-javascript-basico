@@ -1073,6 +1073,264 @@ function checkObj(obj, checkProp) {
 console.log(checkObj);
 */
 
+//todo: Ejercicio del dia 8: 22/12/2022
+
 //?62-Manipulando objectos complejos
+
+/*
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+    "artist": "Shakira",
+    "title": "Loba",
+    "release_year": 2002,
+    "formats": [
+      "DVD",
+      "STRIMING",
+      "FLY"
+    ]
+  }
+];
+
+console.log(myMusic);
+*/
+
+//?63-Accede a objetos anidados
+
+/*
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+console.log(gloveBoxContents);
+*/
+
+//?64-Accede a arreglos anidados
+
+/*
+const myPlants = [
+  {
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }
+];
+
+const secondTree = myPlants[1].list[1];
+
+console.log(secondTree);
+*/
+
+//?65-Colección de discos
+
+/*
+// Configuración
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Cambia solo el código debajo de esta línea
+function updateRecords(records, id, prop, value) {
+  if (prop !== 'tracks' && value !== "") {
+    records[id][prop] = value;
+  } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
+    records[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop];
+  }
+  return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+console.log(updateRecords(recordCollection, 1245, 'artist', 'ABBA'));
+*/
+
+//?66-Itera con el bucle "while" de JavaScript
+
+/*
+// Configuración
+const myArray = [];
+
+let i = 5;
+while(i >= 0) {
+  myArray.push(i);
+  i--;
+}
+
+// Cambia solo el código debajo de esta línea
+
+console.log(myArray);
+*/
+
+//?67-Itera con los bucles "for" de JavaScript
+
+/*
+// Configuración
+const myArray = [];
+
+for (let i = 1; i < 6; i++){
+  myArray.push(i);
+}
+
+// Cambia solo el código debajo de esta línea
+console.log(myArray);
+*/
+
+//?68-Itera números impares con un bucle "for"
+/*
+// Configuración
+const myArray = [];
+
+
+for (let i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+
+// Cambia solo el código debajo de esta línea
+console.log(myArray);
+*/
+
+//?69-Cuenta hacia atrás con un bucle "for"
+
+/*
+// Configuración
+const myArray = [];
+
+for(let i = 9; i > 0; i-=2){
+  myArray.push(i);
+}
+
+// Cambia solo el código debajo de esta línea
+
+console.log(myArray)
+*/
+
+//?70-Itera a través de un arreglo con un bucle "for"
+
+/*
+// Configuración
+const myArr = [2, 3, 4, 5, 6];
+
+let total = 0;
+
+for (let i = 0; i < myArr.length; i++){
+  total += myArr[i];
+}
+
+// Cambia solo el código debajo de esta línea
+
+console.log(total);
+*/
+
+//?71-Anida bucles "for"
+
+/*
+function multiplyAll(arr) {
+  let product = 1;
+  // Cambia solo el código debajo de esta línea
+  for(let i=0; i < arr.length; i++){
+    for (let j= 0; j < arr[i].length; j++){
+      product = product * arr[i][j];
+    }
+  }
+  // Cambia solo el código encima de esta línea
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+console.log(multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
+console.log(multiplyAll([[5, 1], [0.2, 4, 0.5], [3, 9]]));
+console.log(multiplyAll([[1], [2], [3]]));
+*/
+
+//?72-Itera con el bucle "do...while" de JavaScript
+
+/*
+// Configuración
+const myArray = [];
+let i = 10;
+
+// Cambia solo el código debajo de esta línea
+do {
+  myArray.push(i);
+  i++;
+} while (i <= 10)
+
+console.log(myArray);
+*/
+
+//?73-Reemplaza bucles usando recursión
+
+/*
+function sum(arr, n) {
+  // Cambia solo el código debajo de esta línea
+ if (n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n - 1];
+    }
+  // Cambia solo el código encima de esta línea
+}
+
+console.log(sum([1], 0));
+console.log(sum([2, 3, 4], 1));
+console.log(sum([2, 3, 4, 5], 3));
+*/
+
+//?74-Búsqueda de perfiles
+
+
+
 
 
