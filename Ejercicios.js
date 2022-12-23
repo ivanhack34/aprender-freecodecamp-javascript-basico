@@ -1328,9 +1328,200 @@ console.log(sum([2, 3, 4], 1));
 console.log(sum([2, 3, 4, 5], 3));
 */
 
+//todo: Ejercicio del dia 9: 23/12/2022
+
 //?74-Búsqueda de perfiles
 
+/*
+// Configuración
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
 
+function lookUpProfile(name, prop) {
+  // Cambia solo el código debajo de esta línea
+    for (let x = 0; x < contacts.length; x++) {
+    if (contacts[x].firstName === name) {
+      if (contacts[x].hasOwnProperty(prop)) {
+        return contacts[x][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+  // Cambia solo el código encima de esta línea
+}
 
+lookUpProfile("Akira", "likes");
 
+console.log(lookUpProfile("Akira", "likes"));
+console.log(lookUpProfile("Kristian", "lastName"));
+console.log(lookUpProfile("Sherlock", "likes"));
+console.log(lookUpProfile("Bob", "potato"));
+console.log(lookUpProfile("Akira", "address"));
+*/
+
+//?75-Genera fracciones aleatorias con JavaScript
+
+/*
+function randomFraction() {
+  
+  // Cambia solo el código debajo de esta línea
+  let num = 0;
+  while(num === 0){
+    num = Math.random();
+  }
+
+  return num;
+
+  // Cambia solo el código encima de esta línea
+}
+
+console.log(randomFraction());
+*/
+
+//?76-Genera números enteros aleatorios con JavaScript
+
+/*
+function randomWholeNum() {
+
+  // Cambia solo el código debajo de esta línea
+
+  return Math.floor(Math.random() * 10)
+}
+
+console.log(randomWholeNum());
+*/
+
+//?77-Genera números enteros aleatorios dentro de un rango
+
+/*
+function randomRange(myMin, myMax) {
+  // Cambia solo el código debajo de esta línea
+  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+  // Cambia solo el código encima de esta línea
+}
+
+console.log(randomRange(4, 50));
+*/
+
+//?78-Utiliza la función "parseInt"
+
+/*
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
+
+console.log(convertToInteger("56"));
+console.log(convertToInteger("77"));
+console.log(convertToInteger("JamesBond"));
+*/
+
+//?79-Utiliza la función "parseInt" con Radix (Base)
+
+/*/
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011");
+
+console.log(convertToInteger('10011'));
+console.log(convertToInteger('111001'));
+console.log(convertToInteger('JamesBond'));
+*/
+
+//?80-Usa el operador condicional (ternario)
+
+/*
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2);
+
+console.log(checkEqual(1, 2));
+console.log(checkEqual(1, 1));
+console.log(checkEqual(1, -1));
+*/
+
+//?81-Usa múltiples operadores condicionales (ternarios)
+
+/*
+function checkSign(num) {
+  return (num > 0) ? "positive" 
+  : (num < 0) ? "negative" 
+  : "zero";
+}
+
+checkSign(10);
+
+console.log(checkSign(10));
+console.log(checkSign(-12));
+console.log(checkSign(0));
+*/
+
+//?82-Utiliza recursión para crear una cuenta regresiva
+
+/*
+// Cambia solo el código debajo de esta línea
+function countdown(n){
+  if (n < 1) {
+   return [];
+ } else {
+   const arr = countdown(n - 1);
+   arr.unshift(n);
+   return arr;
+ }
+}
+// Cambia solo el código encima de esta línea
+
+console.log(countdown(-1));
+console.log(countdown(10));
+console.log(countdown(5));
+*/
+
+//?83-Usa recursión para crear un rango de números
+
+/*
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+  return [];
+} else {
+  const numbers = rangeOfNumbers(startNum, endNum - 1);
+  numbers.push(endNum);
+  return numbers;
+}
+};
+
+console.log(rangeOfNumbers(1, 5));
+console.log(rangeOfNumbers(6, 9));
+console.log(rangeOfNumbers(4, 4));
+*/
 
